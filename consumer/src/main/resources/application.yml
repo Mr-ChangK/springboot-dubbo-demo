@@ -1,0 +1,16 @@
+server:
+  port: 17006
+spring:
+  dubbo:
+    application:
+      name: consumer
+    registry:
+          address: zookeeper://localhost:2181
+    scan: demo.chk.consumer.service
+
+
+
+
+#  spring.dubbo.application.name=consumer
+#  spring.dubbo.registry.address=zookeeper://192.168.99.100:32770
+#  spring.dubbo.scan=cn.teaey.sprintboot.test
